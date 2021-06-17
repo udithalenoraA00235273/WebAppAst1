@@ -1,0 +1,32 @@
+﻿@page
+@model WebApplicationAst1.Pages.IntroModel
+@{
+    ViewData["Title"] = "Intro Page";
+}
+
+
+    <div>
+        <h3> My Name is Uditha Lenora</h3>
+    </div>
+
+    <div>
+        <form>
+            <input name="firstNumber" type="number" value="@Model.firstNumber" />
+            <input name="secondNumber" type="number" value="@Model.secondNumber" />
+            <input type="submit" value="Submit (Multiply)" />
+            <output style="font-family:SimSun;font-size:large;color:red;">  Answer Is : @Model.Result </output>
+        </form>
+    </div>
+    @section Paragraph{
+        <div>
+            <p style="text-align:center;font-style:italic;color:darkgreen">
+                Welcome to the first Assignment of Web App Development Module <br /> Programe Name - Mobile Application Development (MAPD)
+                <br /> Student ID - A00235273
+            </p>
+        </div>
+    }
+
+@if (Model.ResultSet == true)
+{
+    
+}
